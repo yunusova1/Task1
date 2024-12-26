@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.fabric.Controller">
+    <top>
+        <FlowPane alignment="CENTER">
+        <TextField fx:id="sidesField" layoutX="50" layoutY="30" />
+        <MenuButton fx:id="colorMenu" layoutX="50" layoutY="70">
+            <items>
+                <MenuItem text="Выберите цвет" />
+            </items>
+        </MenuButton>
+        <Button layoutX="50" layoutY="110" text="Нарисовать" onAction="#drawShape"/>
+        <Label fx:id="descriptionLabel" text="Введите число сторон:" />
+        </FlowPane>
+    </top>
+    <center>
+        <Canvas fx:id="canvas" width="500" height="400"/>
+    </center>
+</BorderPane>
