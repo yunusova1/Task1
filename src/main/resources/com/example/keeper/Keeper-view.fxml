@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.keeper.Controller" style="-fx-background-color: blue;">
+    <center>
+        <Pane fx:id="drawingPanel" prefWidth="800" prefHeight="600" style="-fx-background-color:blue;">
+            <!-- Здесь будут рисоваться фигуры -->
+        </Pane>
+    </center>
+    <bottom>
+        <VBox>
+            <ToolBar fx:id="toolBar">
+                <Button text="Круг" onAction="#addCircle" style="-fx-background-color: lightblue;"/>
+                <Button text="Прямоугольник" onAction="#addRectangle" style="-fx-background-color: lightblue;"/>
+                <Button text="Треугольник" onAction="#addTriangle" style="-fx-background-color: lightblue;"/>
+                <Button text="Квадрат" onAction="#addSquare" style="-fx-background-color: lightblue;"/>
+                <Button text="Пятиугольник" onAction="#addPentagon" style="-fx-background-color: lightblue;"/>
+                <Button text="Шестиугольник" onAction="#addHexagon" style="-fx-background-color: lightblue;"/>
+                <Button text="Ромб" onAction="#addDiamond" style="-fx-background-color: lightblue;"/>
+                <Button text="Эллипс" onAction="#addEllipse" style="-fx-background-color: lightblue;"/>
+                <Button text="Параллелограмм" onAction="#addParallelogram" style="-fx-background-color: lightblue;"/>
+                <Button text="Удалить последнюю фигуру" onAction="#removeLastShape" style="-fx-background-color: lightblue;"/>
+            </ToolBar>
+            <Pane fx:id="backgroundPanel" prefHeight="50" style="-fx-background-color: transparent;">
+            </Pane>
+        </VBox>
+    </bottom>
+</BorderPane>
