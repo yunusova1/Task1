@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.task6.Controller" style="-fx-background-color: blue;">
+    <top>
+        <!-- Здесь можно оставить пустым, если ничего не нужно в верхней части -->
+    </top>
+    <center>
+        <!-- Увеличиваем размеры холста (Canvas) -->
+        <Canvas fx:id="canvas" height="300" onMouseClicked="#drawShape" width="600" />
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" BorderPane.alignment="CENTER">
+            <Label text="Выберите фигуру из списка:" />
+            <!-- Используем ListView для отображения списка фигур -->
+            <ListView fx:id="listView" prefHeight="100" prefWidth="100" />
+            <ColorPicker fx:id="colorPicker" prefWidth="100" />
+        </VBox>
+    </bottom>
+</BorderPane>
