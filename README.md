@@ -7,4 +7,5 @@
 # Рабочее окно приложения:
 
 ![image](https://github.com/user-attachments/assets/2da695b6-61bd-4751-9995-aec16367293a)
-
+# Диаграмма класса
+![Task1](https://github.com/user-attachments/assets/b315cf9a-df67-4445-9259-b48415962b06)
